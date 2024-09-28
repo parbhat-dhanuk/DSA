@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <title>Array Traversing</title>
+
+    <script>
+
+        let data = [10,20,30,40,33,22,44]
+           
+        //Traversing
+        // for(i=0;i<data.length;i++){
+        //    document.write(`Array ${i} is ${data[i]}<br>`)
+           
+        // }
+         
+        //Accessing
+        // let x=4
+        // document.write(data[x])
+
+        function getElement(){
+            let el = document.getElementById("101").value
+
+            if(el<data.length && el>0){
+                alert(data[el])
+
+            }else{
+                alert("please enter valid value")
+            }
+                
+            
+            
+           
+            
+        }
+
+    </script>
+    <input type="text" name="" id="101"> 
+    <button onclick="getElement()">Get Element</button>
+    
+</body>
+</html>
